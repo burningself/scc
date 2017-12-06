@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=no, width=device-width" name="viewport">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <title>施工日记</title>
+    <link rel="stylesheet" href="/plugins/weui/weui.css">
+    <link rel="stylesheet" href="/plugins/weui/example.css">
+    <link rel="stylesheet" href="/css/weui_css/weuix.min.css">
+    <link rel="stylesheet" href="/css/weui_css/self.css">
+    <link rel="stylesheet" href="/css/weui_css/iconfont.css">
+
+</head>
+
+<body ontouchstart>
+    {% verbatim %}
+    <div class="container" id="container">
+        <router-view></router-view>
+    </div>
+    {% endverbatim %}
+    <script src="/plugins/weui/weui.min.js"></script>
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+
+    <script src="/plugins/vue/vue.min.js"></script>
+    <script src="/plugins/vue/vue-router.min.js"></script>
+    <script src="/plugins/vue/vuex.js"></script>
+    <script src="/plugins/axios.min.js"></script>
+    <script src="/plugins/weui/zepto.min.js"></script>
+    <script src="/plugins/weui/picker.js"></script>
+    <script src="/plugins/weui/iscroll.js"></script>
+    <script src="/plugins/bscroll.js"></script>
+    <script src="/plugins/weui/picker-city.js "></script>
+    <script type="text/javascript" src="http://webapi.amap.com/maps?v=1.4.0&key=502dffec864e508e82cc1ac806d7c9a5&plugin=AMap.ToolBar"></script>
+    <!--<script type="text/javascript" src="http://cache.amap.com/lbs/static/addToolbar.js"></script>-->
+    <script src="/plugins/weui/lrz.min.js"></script>
+    <script src="/js/weixin/wxsdk/wxsdk.js"></script>
+    <!--地图store-->
+    <script src="/js/weixin/store/moduleProsure.js "></script>
+    <!--公共store-->
+    <script src="/js/weixin/store/commonModules.js "></script>
+    <!--仓库-->
+    <script src="/js/weixin/store/wxstore.js "></script>
+
+    <!--首页-->
+    <script src="/js/weixin/index.js "></script>
+    <!--成功消息弹窗组件-->
+    <script src="/js/weixin/component/success_msg.js "></script>
+    <!--弹窗组件-->
+    <script src="/js/weixin/component/msg.js "></script>
+    <!--加载更多-->
+    <script src="/js/weixin/component/jz_more.js "></script>
+    <!--list组件-->
+    <script src="/js/weixin/component/list.js "></script>
+    <!--导航头部组件-->
+    <script src="/js/weixin/component/navigation.js "></script>
+    <!--table切换组件-->
+    <script src="/js/weixin/component/changeTable.js "></script>
+    <!--input框组件-->
+    <script src="/js/weixin/component/input_look.js "></script>
+    <!--日期组件-->
+    <script src="/js/weixin/component/date_select.js "></script>
+    <!--添加分部组件-->
+    <script src="/js/weixin/component/add_fb.js "></script>
+    <!--施工日记组件-->
+    <script src="/js/weixin/component/diary.js "></script>
+    <!--上传效果图组件-->
+    <script src="/js/weixin/component/submit_img.js "></script>
+    <!--//滚动组件-->
+    <script src="/js/weixin/component/scroll.js "></script>
+    <!--左滑组件-->
+    <script src="/js/weixin/component/slide_left.js "></script>
+    <!--主页面-->
+    <script src="/js/weixin/wxIndex.js "></script>
+    <!--消息-->
+    <script src="/js/weixin/message.js "></script>
+    <!--个人信息-->
+    <script src="/js/weixin/self_info.js "></script>
+    <!--项目在线-->
+    <script src="/js/weixin/project_online.js "></script>
+    <!--施工地图-->
+    <script src="/js/weixin/work_map.js"></script>
+    <!--项目在线下的單位列表-->
+    <script src="/js/weixin/project_online/unit_list.js "></script>
+    <!--项目在线下的地圖列表-->
+    <script src="/js/weixin/project_online/map_list.js?wer=1.0 "></script>
+    <!--项目在线下的项目列表-->
+    <script src="/js/weixin/project_online/project_list.js?wer=1.0"></script>
+    <!--项目在线下的项目地图列表-->
+    <script src="/js/weixin/project_online/project_map_list.js?wer=1.0 "></script>
+    <!--项目列表-->
+    <script src="/js/weixin/projectList.js "></script>
+    <!--具体某个项目-->
+    <script src="/js/weixin/a_project.js "></script>
+    <!--工程概况-->
+    <script src="/js/weixin/project_thing/general_situation.js "></script>
+    <!--工序管控-->
+    <script src="/js/weixin/project_thing/managementand_and_control.js "></script>
+    <!--工序管控下的工程轴-->
+    <script src="/js/weixin/gxgk/procedure_line.js "></script>
+    <!--工序管控下的时间轴-->
+    <script src="/js/weixin/gxgk/procedure_time_line.js "></script>
+    <!--工序管控下的工程轴下的某月份工程-->
+    <script src="/js/weixin/gxgk/specific_gx.js"></script>
+    <!--工序管控下的时间轴下的工序详情-->
+    <script src="/js/weixin/gxgk/process_details.js"></script>
+    <!--工序管控下的工程轴下的工序详情-->
+    <script src="/js/weixin/gxgk/procedure_project_line.js"></script>
+    <!--单位工程-->
+    <script src="/js/weixin/project_thing/unit_project.js "></script>
+    <!--单位工程下的每个工程-->
+    <script src="/js/weixin/unit_project/project_in_methods.js"></script>
+    <!--单位工程下的危大工程-->
+    <script src="/js/weixin/unit_project/danger_project.js"></script>
+    <!--单位工程下的危大工程下的时间轴-->
+    <script src="/js/weixin/unit_project/danger_line.js"></script>
+    <!--单位工程下的危大工程下的某月份工程-->
+    <script src="/js/weixin/unit_project/danger_project_list.js"></script>
+    <!--单位工程下的基本内容-->
+    <script src="/js/weixin/unit_project/basic_content.js"></script>
+    <!--单位工程下的施工日记-->
+    <script src="/js/weixin/unit_project/construction_diary.js"></script>
+    <!--单位工程下的形象进度-->
+    <script src="/js/weixin/unit_project/graphic_progress.js"></script>
+    <!--单位工程下的重点工序-->
+    <script src="/js/weixin/important_gx/important_gx.js"></script>
+    <!--单位工程下的重点工序展示-->
+    <script src="/js/weixin/important_gx/add_important_gx.js"></script>
+    <!--单位工程下的添加重点工序-->
+    <script src="/js/weixin/important_gx/add_gx.js"></script>
+
+    <!--危大管控-->
+    <script src="/js/weixin/project_thing/danger_control.js "></script>
+    <!--危大管控下的审批流程-->
+    <script src="/js/weixin/project_thing/check_opinion.js"></script>
+    <!--危大管控下的附件信息-->
+    <script src="/js/weixin/project_thing/check_accessory.js"></script>
+    <!--危大管控下的工程轴-->
+    <script src="/js/weixin/project_line.js"></script>
+    <!---危大管控下的时间轴-->
+    <script src="/js/weixin/time_line.js"></script>
+    <!---危大管控下的危大详情-->
+    <script src="/js/weixin/danger_info.js"></script>
+    <!---危大管控下的危大论证-->
+    <script src="/js/weixin/danger_argument.js"></script>
+    <!--时间轴下的对应日期工程-->
+    <script src="/js/weixin/danger_control/date_project.js"></script>
+    <!--工程轴下的对应设计-->
+    <script src="/js/weixin/engineering_shaft.js"></script>
+    <!--形象进度-->
+    <script src="/js/weixin/graphic_progress/graphic_index.js "></script>
+    <!--形象进度下的工程轴-->
+    <script src="/js/weixin/graphic_progress/graphic_project.js "></script>
+    <!--形象进度下的时间轴-->
+    <script src="/js/weixin/graphic_progress/graphic_time.js "></script>
+    <!--形象进度下的时间轴下某个月的工程-->
+    <script src="/js/weixin/graphic_progress/graphic_time_someone.js "></script>
+    <!--四令管理-->
+    <script src="/js/weixin/project_thing/four_order.js "></script>
+    <!--沉桩令-->
+    <script src="/js/weixin/order_content.js"></script>
+    <!--添加工程-->
+    <script src="/js/weixin/project_thing/addProject.js "></script>
+
+
+
+
+    <!--首页危大警示-->
+    <script src="/js/weixin/weida/weida.js"></script>
+    <!--首页危大警示下的单位轴-->
+    <script src="/js/weixin/weida/danwei.js"></script>
+    <!--首页危大警示下的单位轴下的项目列表-->
+    <script src="/js/weixin/weida/wd_list.js"></script>
+    <!--首页危大警示下的单位轴下的工程-->
+    <script src="/js/weixin/weida/wd_list_gc.js"></script>
+    <!--首页危大警示下的单位轴下的施工设计-->
+    <script src="/js/weixin/weida/wd_gc_sg.js"></script>
+    <!--首页危大警示下的时间轴-->
+    <script src="/js/weixin/weida/wd_time.js"></script>
+    <!--首页危大警示下的时间轴下的具体日期对应的项目-->
+    <script src="/js/weixin/weida/wd_time_project.js"></script>
+    <!--首页危大警示下的时间轴下的具体日期对应的项目下的工程-->
+    <script src="/js/weixin/weida/wd_time_project_gc.js"></script>
+    <!--首页危大警示下的时间轴下的具体日期对应的项目下的工程下的施工设计-->
+    <script src="/js/weixin/weida/wd_time_project_gc_sg.js"></script>
+
+    <!--首页形象进度-->
+    <script src="/js/weixin/xxjd/xxjd.js"></script>
+    <!--首页形象进度下的单位轴-->
+    <script src="/js/weixin/xxjd/xx_danwei.js"></script>
+    <!--首页形象进度下的单位轴下的项目列表-->
+    <script src="/js/weixin/xxjd/xx_list.js"></script>
+    <!--首页形象进度下的单位轴下的项目列表下的工程列表-->
+    <script src="/js/weixin/xxjd/xx_list_gc.js"></script>
+    <!--首页形象进度下的时间轴-->
+    <script src="/js/weixin/xxjd/xx_time.js"></script>
+    <!--首页形象进度下的时间轴下的具体日期对应的项目-->
+    <script src="/js/weixin/xxjd/xx_time_project.js"></script>
+    <!--首页形象进度下的时间轴下的具体日期对应的项目下的具体工程-->
+    <script src="/js/weixin/xxjd/xx_time_project_gc.js"></script>
+
+    <!--首页工序把控-->
+    <script src="/js/weixin/gxbk/gxbk.js"></script>
+    <!--首页工序把控下的单位轴-->
+    <script src="/js/weixin/gxbk/gxbk_danwei.js"></script>
+    <!--首页工序把控下的单位轴下的项目列表-->
+    <script src="/js/weixin/gxbk/gx_list.js"></script>
+    <!--首页工序把控下的单位轴下的项目列表下的工程列表-->
+    <script src="/js/weixin/gxbk/gx_list_gc.js"></script>
+    <!--首页工序把控下的单位轴下的项目列表下的工程列表下的工序列表-->
+    <script src="/js/weixin/gxbk/gx_list_gc_gxList.js"></script>
+    <!--首页工序把控下的时间轴-->
+    <script src="/js/weixin/gxbk/gx_time.js"></script>
+    <!--首页工序把控下的时间轴下的具体日期对应的项目-->
+    <script src="/js/weixin/gxbk/gx_time_project.js"></script>
+    <!--首页工序把控下的时间轴下的具体日期对应的项目下的具体工程-->
+    <script src="/js/weixin/gxbk/gx_time_project_gc.js"></script>
+    <!--首页工序把控下的时间轴下的具体日期对应的项目下的具体工程下的工序列表-->
+    <script src="/js/weixin/gxbk/gx_time_project_gc_gxList.js"></script>
+
+
+    <!--添加施工日记-->
+    <script src="/js/weixin/unit_project/add_diary.js"></script>
+    <!--pdf管理-->
+    <script src="/js/weixin/unit_project/pdf_show.js"></script>
+    <!--我的任务-->
+    <script src="/js/weixin/myTask/myTask.js"></script>
+    <!--路由-->
+    <script src="/js/weixin/wxrouter.js"></script>
+
+
+
+    <script>
+        // var map = new AMap.Map('allmap', {
+        //     resizeEnable: true,
+        // });
+        // Vue.prototype.$map = map;
+
+        Vue.prototype.$BScroll = BScroll;
+
+        // console.log(Velocity);
+        // Velocity(document.getElementById("container"), {
+        //     opacity: 0.5
+        // }, {
+        //     duration: 1000
+        // });
+        Vue.prototype.$IScroll = IScroll;
+        const vm = new Vue({
+            router,
+            store,
+            data: {
+                num: 1,
+                footChange: '', //切换底部高亮显示
+            },
+        }).$mount('#container');
+    </script>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+.warning_title {
+    height: 50px;
+    background: #495060;
+    border-radius: 5px;
+    position: relative;
+    z-index: 99;
+}
+
+.warning_title .ivu-cascader {
+    width: 20%;
+    margin-left: 20px;
+    float: left;
+    margin-top: 9px;
+}
+
+.warning_center {
+    height: 100%;
+    margin-top: -50px;
+    padding-top: 50px;
+    background: #fff;
+}

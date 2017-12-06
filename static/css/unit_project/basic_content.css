@@ -1,0 +1,146 @@
+.marpad_info {
+    height: 100%;
+    width: 100%;
+    margin-top: -50px;
+    padding-top: 50px;
+    background: #fff;
+}
+
+.marpad_info>.ivu-row {
+    height: 15%;
+}
+
+.marpad_info>.ivu-row>.ivu-col {
+    height: 100%;
+}
+
+.basic_content-info .row {
+    height: 15%;
+    background: #fff;
+    margin: 0;
+}
+
+.marpad_info>.ivu-row>.ivu-col>span {
+    right: 75%;
+}
+
+.marpad_info>.ivu-row>.ivu-col p {
+    height: 30px;
+    border: 1px solid #E7EAEF;
+    border-right: none;
+    width: 45%;
+    right: 25%;
+    border-radius: 5px 0 0 5px;
+    font-size: 14px;
+    line-height: 30px;
+    color: #A1A1A1;
+    text-align: center;
+}
+
+.marpad_info>.ivu-row>.ivu-col i {
+    display: block;
+    height: 30px;
+    width: 10%;
+    border-radius: 5px;
+    border: 1px solid #819EB0;
+    background: #819EB0;
+    margin-right: 5px;
+    right: 14%;
+    text-align: center;
+}
+
+.marpad_info>.ivu-row>.ivu-col i img {
+    width: 54%;
+}
+
+.basic_content_list {
+    height: 85%;
+    background: #fff;
+}
+
+.basic_content_list ul {
+    height: 100%;
+    padding: 0 5% 0 4%;
+}
+
+.basic_content-info ul li {
+    width: 100%;
+    height: 7%;
+    position: relative;
+    border: 1px solid #E7EAEF;
+    border-bottom: none;
+}
+
+.basic_content-info ul li:nth-last-child(1) {
+    border-bottom: 1px solid #E7EAEF;
+}
+
+.basic_content-info ul li span:nth-child(1) {
+    left: 9%;
+}
+
+.basic_content-info ul li span:nth-child(2) {
+    right: 39%;
+    color: #A1A1A1;
+}
+
+
+/*施工日志列表*/
+
+
+/*施工日志*/
+
+.canvTable {
+    border-collapse: collapse;
+    width: 900px;
+    margin-top: 75px;
+}
+
+.tablePaint tr {
+    height: 40px;
+}
+
+.tablePaint {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    position: relative;
+}
+
+.tablePaint td {
+    width: 60px;
+    height: 40px;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    text-align: justify;
+    text-justify: distribute-all-lines;
+    text-align-last: justify;
+}
+
+td.workCount {
+    text-align: center;
+}
+
+.marpad_info_title {
+    text-align: center;
+    width: 900px;
+}
+
+
+/*.marpad_info_title>span {
+    font-size: 18px;
+    /*text-decoration: underline;*/
+
+
+/*}*/
+
+.weather .ivu-row .ivu-col {
+    height: 50px;
+}
+
+.weather .ivu-row .ivu-col:nth-child(1) {
+    padding-left: 20px;
+    text-align: left;
+    line-height: 50px;
+}

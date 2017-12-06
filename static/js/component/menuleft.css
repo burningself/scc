@@ -1,0 +1,19 @@
+.pro-left {
+    width: 200px;
+    height: 100%;
+    position: relative;
+    z-index: 999;
+}
+
+.pro-left .ivu-menu {
+    height: 100%;
+}
+
+.pro-left .ivu-menu {
+    width: 200px !important;
+    padding-top: 20px;
+}
+
+.pro-left .spinner>div {
+    background: #fff;
+}

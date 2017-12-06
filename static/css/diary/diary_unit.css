@@ -1,0 +1,161 @@
+.diary_unit {
+    width: 100%;
+    padding: 20px;
+    position: relative;
+}
+
+.diary_unit_title {
+    width: 240px;
+    height: 100%;
+    /*background: pink;*/
+    background: #fff;
+    border-radius: 5px;
+}
+
+.diary_unit_search {
+    height: 50px;
+    position: relative;
+    z-index: 99;
+}
+
+.diary_unit_search input {
+    height: 50px;
+    width: 100%;
+    background: #495060;
+    border: none;
+    color: #fff;
+    outline: none;
+    padding-left: 20px;
+    border-radius: 5px 5px 0 0;
+}
+
+.diary_unit_search i {
+    font-size: 22px;
+    color: #fff;
+    width: 20px;
+    height: 20px;
+    right: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+/*/*
+.diary_unit_title .ivu-icon {
+    font-size: 20px;
+}*/
+
+.diary_unit_company {
+    width: 100%;
+    height: 100%;
+    margin-top: -50px;
+    padding-top: 50px;
+    border-radius: 0 0 5px 5px;
+    position: relative;
+}
+
+.diary_unit_company ul {
+    height: 100%;
+    overflow-y: auto;
+    border-radius: 0 0 5px 5px;
+}
+
+.diary_unit_company ul li {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    box-sizing: border-box;
+}
+
+.diary_unit_select {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0;
+    padding: 20px 20px 20px 280px;
+}
+
+.diary_unit_select_info {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    margin-top: -50px;
+    padding-top: 50px;
+    overflow-x: hidden;
+    background: #fff;
+}
+
+.diary_unit_select_title h4 {
+    position: relative;
+    z-index: 999;
+    height: 50px;
+    background: #495060;
+    line-height: 50px;
+    padding-left: 20px;
+    color: #fff;
+    border-radius: 5px 5px 0 0;
+}
+
+
+/*.diary_unit_select_title .ivu-col {
+    position: relative;
+    height: 50px;
+}
+
+.diary_unit_select_title .ivu-col:nth-child(2) button {
+    right: 20px;
+    /*box-sizing: border-box;*/
+
+.diary_unit_select_info>ul {
+    height: 100%;
+    margin-right: -2px;
+}
+
+.diary_unit_select_info>ul>li {
+    width: 14.28%;
+    /*border: 1px solid #495060;*/
+    height: 25%;
+    float: left;
+    border-left: none;
+    border-top: none;
+}
+
+.diary_unit_select_info>ul>li>a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: relative;
+}
+
+.changImg {
+    text-align: center;
+    height: 70%;
+    width: 80%;
+}
+
+.changImg img {
+    height: 50%;
+}
+
+.changImg p {
+    position: relative;
+    bottom: -10%;
+}
+
+
+/*遮罩层*/
+
+.stop {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: 99;
+}

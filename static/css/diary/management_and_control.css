@@ -1,0 +1,129 @@
+@charset "UTF-8";
+.diary_unit_select_info .unit_data_info {
+    height: 80%;
+    overflow-y: auto;
+}
+
+.data_page {
+    height: 20%;
+    position: relative;
+}
+
+.data_page>ul {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/*
+.diary_unit_select_info table thead td {
+    border: none;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.diary_unit_select_info table thead td:nth-last-child(1) {
+    border-right: none;
+}
+
+
+/*diary_unit_select_info table thead */
+
+
+/*diary_unit_select_info table thead tr td,
+{
+    /*background: #CDCED2;*/
+
+
+/*border-bottom: 1px solid #CDCED2;*/
+
+
+/*border: none;*/
+
+
+/*border-bottom: 1px solid #ccc;*/
+
+
+/*}*/
+
+
+/*.diary_unit_select_info thead td {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.diary_unit_select_info .tableList .unitList {
+    margin-top: -35px;
+    padding-top: 35px;
+}
+
+.pro-map .highIndex {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.diary_unit_select_info tr td:nth-child(1) {
+    color: #fff;
+    position: relative;
+    padding-left: 30px;
+    padding-right: 30px;
+}*/
+
+
+/*.highIndex table thead td:nth-child(1) img {
+    width: 50%;
+    opacity: .3;
+}*/
+
+
+/*.diary_unit_select_info .table-bordered>tbody>tr>td {
+    position: relative;
+    border: 1px solid #CDCED2;
+}
+
+
+/*diary_unit_select_info .table-bordered>tbody>tr:nth-child(1) td {
+    border-top: none;
+}*/
+
+
+/*.diary_unit_select_info .table-bordered>tbody>tr>td:nth-last-child(1) {
+    border-right: none;
+}
+
+.diary_unit_select_info .table-bordered>tbody>tr>td:nth-child(1) {
+    border-left: none;
+    width: 60px;
+}
+
+.management_footer {
+    position: relative;
+    height: 30%;
+    background: #fff;
+}
+
+.management_footer p {
+    height: 30px;
+    padding-left: 2%;
+    width: 100%
+}
+
+.management_footer p img {
+    height: 85%;
+    opacity: .6;
+}
+
+.management_footer span {
+    color: #666666;
+    margin-left: 5px;
+}
+
+.process_control tr td:nth-child(1) {
+    color: #000;
+}*/

@@ -1,0 +1,366 @@
+body {
+    font: 16px "微软雅黑";
+    min-width: 860px;
+}
+
+h3,
+h4 {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+}
+
+.center-xy {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.center-y {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.center-x {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color: #fff;
+}
+
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+    color: #fff;
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+    color: #fff;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+    color: #fff;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.ivu-menu-vertical.ivu-menu-light:after {
+    width: 0;
+}
+
+.sL {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    box-sizing: border-box;
+}
+
+.title {
+    height: 60px;
+    line-height: 60px;
+    background: #d64d4c;
+    position: relative;
+}
+
+.title-user {
+    float: right;
+    height: 100%;
+    text-align: center;
+    line-height: 60px;
+    color: #fff;
+    margin-right: 20px;
+}
+
+.title .title-user img {
+    height: 50%;
+    vertical-align: middle;
+}
+
+.project-title {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding-left: 200px;
+    background: #f0f1f3;
+}
+
+.content {
+    position: relative;
+}
+
+.pro-right .ivu-menu {
+    height: 100%;
+}
+
+.pro-right>.ivu-row>.ivu-col-span-12 {
+    width: 100%;
+}
+
+.pro-right .ivu-menu {
+    width: 200px !important;
+}
+
+.pro-right .spinner>div {
+    background: #000;
+}
+
+.ivu-tabs.ivu-tabs-card>.ivu-tabs-bar .ivu-tabs-nav-container {
+    height: 38px;
+}
+
+.demo-tabs-style1>.ivu-tabs-card>.ivu-tabs-content {
+    height: 120px;
+    margin-top: -16px;
+}
+
+.demo-tabs-style1>.ivu-tabs-card>.ivu-tabs-content>.ivu-tabs-tabpane {
+    background: #fff;
+    padding: 16px;
+}
+
+.demo-tabs-style1>.ivu-tabs.ivu-tabs-card>.ivu-tabs-bar .ivu-tabs-tab {
+    border-color: transparent;
+}
+
+.demo-tabs-style1>.ivu-tabs-card>.ivu-tabs-bar .ivu-tabs-tab-active {
+    border-color: #fff;
+}
+
+.pro_index .demo-tabs-style2>.ivu-tabs.ivu-tabs-card>.ivu-tabs-bar .ivu-tabs-tab {
+    background: #fff;
+    border-radius: 5px;
+    border-bottom: 1px solid #dddee1;
+    transition: none;
+}
+
+.ivu-tabs.ivu-tabs-card>.ivu-tabs-bar .ivu-tabs-tab {
+    height: 35px;
+}
+
+.pro_index .ivu-tabs.ivu-tabs-card>.ivu-tabs-bar .ivu-tabs-tab-active {
+    height: 38px;
+}
+
+.pro_index .ivu-tabs-bar {
+    margin-bottom: 0;
+}
+
+.pro_index .demo-tabs-style2>.ivu-tabs.ivu-tabs-card>.ivu-tabs-bar .ivu-tabs-tab-active {
+    border-top: 1px solid #3399ff;
+    border-radius: 5px 5px 0 0;
+    border-bottom: none;
+}
+
+.demo-tabs-style2>.ivu-tabs.ivu-tabs-card>.ivu-tabs-bar .ivu-tabs-tab-active:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #3399ff;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.ivu-menu-vertical .ivu-menu-item-group-title,
+.ivu-menu-item {
+    font-size: 16px;
+}
+
+.project-list {
+    padding: 20px;
+    background: #fff;
+}
+
+.project-list span {
+    cursor: pointer;
+}
+
+.inputText {
+    height: 100%;
+}
+
+.pro_index .ivu-tabs-tabpane {
+    border: 1px solid #dddee1;
+    border-top: none;
+    background: #fff;
+}
+
+.project-list span {
+    font-size: 14px;
+    margin: 0 10px;
+}
+
+.project-list .blue {
+    background: #0284e2;
+    padding: 2px 5px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.project-info {
+    overflow-y: auto;
+}
+
+.project-info-title {
+    border-top: none;
+    position: relative;
+}
+
+.project-info-title>.ivu-row {
+    height: 50px;
+    background: #f7f7f9;
+    line-height: 50px;
+    padding: 0 20px;
+    border: 1px solid #dddee1;
+    border-top: none;
+}
+
+.project-infoshow li {
+    height: 120px;
+    background: #fff;
+    border: 1px solid #dddee1;
+    border-top: none;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.project-infoshow li:nth-last-child(1) {
+    border-bottom: 1px solid #dddee1;
+}
+
+.project-infoshow li div {
+    height: 100%;
+    position: relative;
+}
+
+.project-infoshow li div:nth-child(2) {
+    padding-left: 20px;
+}
+
+.project-infoshow li .project-information {
+    height: 26px;
+    margin-bottom: 10px;
+}
+
+.project-information>span {
+    font: bold 20px "微软雅黑";
+}
+
+.project-infoshow .ivu-col>p {
+    height: 42px;
+    width: 100%;
+}
+
+.pro_index {
+    height: 100%;
+    padding: 20px;
+}
+
+
+/*.text-hide {
+    position: relative;
+    line-height: 21px;
+    overflow-y: hidden;
+    overflow-x: visible;
+}*/
+
+.project-infoshow li img {
+    height: 100%;
+    width: 100%;
+}
+
+p.text-hide::after {
+    content: "...";
+    font-weight: bold;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-left: 4px;
+    /*margin-right: -1px;*/
+    /*padding: 0 8px 1px 2em;*/
+    /*background: -webkit-linear-gradient(left, transparent, #fff 55%);
+    background: -o-linear-gradient(right, transparent, #fff 55%);
+    background: -moz-linear-gradient(right, transparent, #fff 55%);
+    background: linear-gradient(to right, transparent, #fff 55%);*/
+    background: #fff;
+}
+
+.text-info {
+    letter-spacing: 2px;
+    color: #898D8E;
+    font-size: 14px;
+}
+
+.start-date {
+    letter-spacing: 0px;
+}
+
+.project-information .date {
+    font-style: italic;
+}
+
+
+/*footer*/
+
+.footer {
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: #5E5E5E;
+    color: #FFF;
+}
+
+.graphic .warning_center>ul {
+    width: 100% !important;
+}
+
+.danger {
+    width: 100%;
+    height: 100%;
+}
+
+
+/*去除iview选择下拉框固定高度*/
+
+.ivu-select-dropdown {
+    max-height: none !important;
+}
+
+.ivu-cascader-menu {
+    height: auto !important;
+}

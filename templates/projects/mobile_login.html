@@ -1,0 +1,160 @@
+<html lang="en-us">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <meta name="robots" content="NONE,NOARCHIVE">
+    <title></title>
+
+    <link href="/static/xadmin/vendor/bootstrap/css/bootstrap.css" type="text/css" media="screen" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" id="site-theme" href="/static/xadmin/css/themes/bootstrap-xadmin.css">
+
+    <link href="/static/xadmin/vendor/font-awesome/css/font-awesome.css" type="text/css" media="screen" rel="stylesheet">
+    <link href="/static/xadmin/css/xadmin.main.css" type="text/css" media="screen" rel="stylesheet">
+    <link href="/static/xadmin/css/xadmin.plugins.css" type="text/css" media="screen" rel="stylesheet">
+    <link href="/static/xadmin/css/xadmin.responsive.css" type="text/css" media="screen" rel="stylesheet">
+
+
+    <style type="text/css">
+        #panel-login {
+            max-width: 350px;
+        }
+        
+        #panel-login .controls {
+            padding: 0px 15px 15px !important;
+        }
+        
+        #panel-login .alert-block {
+            padding: 0px;
+        }
+        
+        #panel-login .alert-block ul {
+            margin: 10px 15px;
+            padding-left: 0px;
+        }
+        
+        #panel-login .alert-block ul li {
+            list-style-type: none;
+        }
+        
+        .vcode {position: absolute;left:calc(100% - 130px); z-index:2; margin-top: 87px;width: 80px;background: #00A1FF;color: white;  text-align:center; cursor:pointer;}
+        
+    </style>
+
+
+</head>
+
+<body class="login" style="background:url(/img/bg05.png); background-size:contain;">
+
+    <div class="container" id="app" style="position: absolute;width: 100%; top: calc(50vh - 220px);">
+
+        <form action="/login/" method="post" id="login-form">{% csrf_token %}
+            <div class="panel panel-default panel-single" id="panel-login">
+                <input type="hidden" name="csrfmiddlewaretoken" value="gd8rdgiK5WsPQdBc1gg4W5k2dkqlAMiQ">
+
+                <div class="panel-heading">
+
+                    <h3 class="form-signin-heading" align="center">上海建工施工日志系统</h3>
+
+                </div>
+                <p class="vcode" align="right" onclick="javascript:fetchVcode();">获取验证码</p>
+                <div class="panel-body">
+                    <div id="div_id_username" class="row">
+                        <div class="controls clearfix">
+                            <div class="input-group input-group-lg">
+                                <span class="input-group-addon"><i class="fa fa-user fa-fw"></i></span>
+                                <input class="form-control input-lg" id="id_username" maxlength="254" name="username" type="text" placeholder="用户名" v-model="userName">
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div id="div_id_password" class="row">
+                        <div class="controls clearfix">
+                            <div class="input-group input-group-lg">
+                                <span class="input-group-addon"><i class="fa fa-lock fa-fw"></i></span>
+                                <input class="form-control input-lg" id="id_password" name="password" placeholder="动态密码">
+                            </div>
+
+                        </div>
+                    </div>
+                    <h0 class="failed" style="text-align:center;width:100%;display:inline-block; color:red; font-size:14px;"> {{tip}}</h0>
+                    <button class="btn btn-lg btn-primary btn-block" type="submit" @click="log" style="margin-top:10px;">登录</button>
+                </div>
+            </div>
+        </form>
+
+    </div>
+    <!-- /container -->
+    <script type="text/javascript" src="/static/xadmin/vendor/jquery/jquery.js"></script>
+    <script type="text/javascript" src="/static/plugins/vue/vue.min.js"></script>
+    <script type="text/javascript">
+        document.getElementById('id_username').focus();
+        var _app = new Vue({
+            delimiters: ['[[', ']]'],
+            el: '#app',
+            data: {
+                userName: ''
+            },
+            mounted: function() {},
+            methods: {
+                log() {
+                    localStorage.setItem('login_name', this.userName);
+                }
+            }
+        });
+        
+        function fetchVcode(){
+			var number = $("#id_username").val();
+			if(number){
+				$.ajax({
+					type: "post",
+					url: "/user/fetch_vcode/",
+					async: true,
+					//cache:false,
+					data:{"number":number},
+					success: function(data) {
+						$(".failed").html(data.tip);
+						if(data.show_alert){
+							alert("\n本系统仅供上海建工集团内部人员使用，\n\n内部人员请联系刘敏晓注册，外单位人士勿扰.");
+						}
+						else if(data.success){
+							updateText();
+						}
+					},
+					error: function(data) {
+						alert("系统错误！");
+					}
+				});
+			}
+			else{
+				alert("请填入手机号码！");
+			}			
+		}
+		countTimer=60;
+		function updateText(){
+			$(".vcode").removeAttr("onclick");
+			$(".vcode").css("background","grey");
+			timer1 = setInterval('counter()',1000);
+		}
+		
+		function counter(){
+			if(countTimer){
+				countTimer=countTimer-1;
+				$(".vcode").html(countTimer+"秒后重试");
+			}else{
+				window.clearTimeout(timer1);
+				$(".vcode").css("background","#00A1FF");
+				$(".vcode").attr("onclick","javascript:fetchVcode();");
+				$(".vcode").html("获取验证码");
+				countTimer=60;
+			}
+		}
+    </script>
+</body>
+
+</html>

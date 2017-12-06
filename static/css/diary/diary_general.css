@@ -1,0 +1,224 @@
+@charset "UTF-8";
+.hid {
+    overflow: auto;
+}
+
+.projectName {
+    padding: 15px;
+    background: #EBEBEB;
+}
+
+.projectName-title::before {
+    content: '一公司A项目';
+    display: block;
+    color: #444;
+    height: 34px;
+    font-size: 24px;
+    line-height: 34px;
+    width: 15%;
+    border-radius: 0px 0px 10px 10px;
+    position: absolute;
+    margin-top: -40px;
+    letter-spacing: 3px;
+}
+
+
+/*左边*/
+
+.diary_general_left {
+    height: 100%;
+    width: 17%;
+    position: relative;
+}
+
+.pic-file {
+    width: 100%;
+    height: 35%;
+    text-align: center;
+    background: #fff;
+    box-shadow: 0 0 2px 2px #ccc;
+}
+
+.pic-file>.ivu-carousel .ivu-carousel-list,
+.pic-file>.ivu-carousel .ivu-carousel-track,
+.pic-file>.ivu-carousel .ivu-carousel-item,
+.pic-file>.ivu-carousel .demo-carousel,
+.pic-file>.ivu-carousel .demo-carousel img,
+.pic-file>.ivu-carousel {
+    height: 100% !important;
+}
+
+.pic-file>.ivu-carousel img {
+    width: 100%;
+}
+
+.small-pic-file {
+    height: 11%;
+    padding: 5% 0;
+}
+
+.small-pic-file ul {
+    height: 100%;
+}
+
+.small-pic-file ul li {
+    width: 19%;
+    height: 100%;
+    background: #fff;
+    float: left;
+    margin-left: 8%;
+}
+
+.small-pic-file ul li:nth-child(1) {
+    margin-left: 0;
+}
+
+.build-info {
+    width: 100%;
+    height: 62%;
+    position: absolute;
+    bottom: 0;
+}
+
+.build-info-building {
+    height: 48%;
+    background: #fff;
+}
+
+.build-title {
+    height: 30%;
+    position: relative;
+}
+
+.build-title>div {
+    padding-left: 20px;
+    height: 44%;
+    width: 100%;
+}
+
+.build-title img {
+    height: 100%;
+    margin-right: 5px;
+}
+
+.build-info-structure {
+    height: 48%;
+    background: #fff;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+
+/*建筑概况*/
+
+.build-information {
+    height: 70%;
+}
+
+.build-information ul {
+    height: 100%;
+}
+
+.build-information li {
+    height: 25%;
+    padding-left: 20px;
+    position: relative;
+    font-size: 14px;
+}
+
+.build-information li span:nth-child(1) {
+    left: 10px;
+}
+
+.build-information li span:nth-child(2) {
+    right: 0;
+}
+
+
+/*右边*/
+
+.diary_general_right {
+    height: 100%;
+    width: 82%;
+    position: relative;
+}
+
+.cooperation-unit {
+    height: 35%;
+    background: #fff;
+    border: 1px solid #6598CF;
+}
+
+.diary_general_right li {
+    position: relative;
+}
+
+.cooperation-unit-title {
+    height: 23%;
+    line-height: 30%;
+    position: relative;
+}
+
+.cooperation-unit-title>div {
+    height: 40%;
+    width: 100%;
+    padding-left: 20px;
+    position: relative;
+}
+
+.cooperation-unit-title img {
+    height: 100%;
+    margin-right: 5px;
+}
+
+.cooperation-unit-list {
+    height: 77%;
+}
+
+.cooperation-unit-list ul {
+    height: 100%;
+}
+
+.cooperation-unit-list li {
+    height: 20%;
+    padding-left: 5%;
+    border: 1px solid #ECECEC;
+    border-bottom: none;
+    border-left: none;
+    box-sizing: border-box;
+    width: 50%;
+    float: left;
+}
+
+.cooperation-unit-list li:nth-last-child(1),
+.cooperation-unit-list li:nth-last-child(2) {
+    border-bottom: 1px solid #ECECEC;
+}
+
+.cooperation-unit-list li span:nth-child(2) {
+    margin-left: 45%;
+}
+
+
+/*基本信息*/
+
+.diary_general_information {
+    height: 62%;
+    width: 100%;
+    background: #fff;
+    position: absolute;
+    bottom: 0;
+}
+
+.general_information-title {
+    height: 13%;
+}
+
+.general_information-list {
+    height: 87%;
+}
+
+.general_information-list li {
+    height: 10%;
+}

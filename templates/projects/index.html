@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>首页</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <meta name="robots" content="NONE,NOARCHIVE">
+    <!--<link href="/static/css/bootstrap.css" type="text/css" media="screen" rel="stylesheet">-->
+
+    <link rel="stylesheet" href="/plugins/iview/styles/iview.css">
+
+
+    <!--<link href="/css/font-awesome.css" type="text/css" media="screen" rel="stylesheet">-->
+    <!--项目在线-->
+    <link rel="stylesheet" href="/css/xadmin.diary.css">
+    <!--loading组件样式-->
+    <link rel="stylesheet" href="/js/component/loading.css">
+    <link rel="stylesheet" href="/js/component/menuleft.css">
+
+    <!--施工日记-->
+    <link rel="stylesheet" href="/css/buildDiary.css">
+    <!--工程概况-->
+    <link rel="stylesheet" href="/css/diary/diary_general.css">
+    <!--单位工程-->
+    <link rel="stylesheet" href="/css/diary/diary_unit.css">
+    <!--危大警示-->
+    <link rel="stylesheet" href="/css/warning.css">
+    <!--危大管控-->
+    <link rel="stylesheet" href="/css/diary/management_and_control.css">
+    <!--单位工程下的基本内容-->
+    <link rel="stylesheet" href="/css/unit_project/basic_content.css">
+    <!--单位工程下的形象进度-->
+    <link rel="stylesheet" href="/css/unit_project/graphic_progress.css">
+    <!--四令管理下的沉桩令-->
+    <link rel="stylesheet" href="/css/order_management_order/piling_order.css">
+</head>
+
+<body>
+    {% verbatim %}
+    <!--title-->
+    <div class="container-fluid title">
+        <img src="../../img/logo.jpg" alt="">
+        <div class="title-user sL">
+            <span>欢迎你 , 四建集团</span>
+        </div>
+    </div>
+    <!--content-->
+    <div id="diary" class="content">
+        <menuleft></menuleft>
+        <div class="project-title">
+            <router-view></router-view>
+        </div>
+        <!--<div class="footer">
+            <p>上海建工四建集团</p>
+        </div>-->
+    </div>
+    {% endverbatim %}
+    <script type="text/javascript " src="/plugins/jquery/jquery.js"></script>
+    <script type="text/javascript " src="/js/vue.js "></script>
+    <script src="/plugins/iview/iview.min.js"></script>
+    <script src="/js/vue-router.min.js"></script>
+    <script src="/plugins/vuex.js"></script>
+    <script src="/plugins/axios.min.js"></script>
+    <!--文本多行隐藏插件-->
+    <script src="/js/jquery.dotdotdot.js"></script>
+    <!--vuex-->
+    <script src="/js/store.js"></script>
+    <!--loading组件-->
+    <script src="/js/component/loading.js"></script>
+    <!--menuleft组件-->
+    <script src="/js/component/menuleft.js"></script>
+    <!--工程列表组件-->
+    <script src="/js/component/projectContent.js"></script>
+    <!--形象进度下的组件-->
+    <script src="/js/component/danger.js"></script>
+    <!--工序把控下的组件-->
+    <script src="/js/component/gxbk.js"></script>
+    <!--项目工程搜索组件-->
+    <script src="/js/component/searchPro.js"></script>
+
+    <!--组件-->
+    <script src="/js/component/warning_project.js"></script>
+    <!--project-->
+    <script src="/js/project.js "></script>
+    <!--危大警示-->
+    <script src="/js/warning.js"></script>
+    <!--project3-->
+    <script src="/js/project3.js "></script>
+    <!--工程概况-->
+    <script src="/js/diary/diary_general.js "></script>
+    <!--单位工程-->
+    <script src="/js/diary/diary_unit.js "></script>
+    <!--危大管控-->
+    <script src="/js/diary/management_and_control.js "></script>
+    <!--工序管控-->
+    <script src="/js/unit_project/key_process.js "></script>
+    <!--形象进度-->
+    <script src="/js/graphic.js"></script>
+    <!--形象进度下的列表切换-->
+    <script src="/js/graphic/changeList.js"></script>
+    <!--形象进度下的列表切换-->
+    <script src="/js/graphic/changeProject.js"></script>
+    <!--四令管理-->
+    <script src="/js/four_order.js"></script>
+    <!--工序把控-->
+    <script src="/js/process_control.js"></script>
+    <!--单位工程下的右边主页面-->
+    <script src="/js/unit_project/unit_project_index.js "></script>
+    <!--单位工程下的四令管理-->
+    <script src="/js/unit_project/order_management.js "></script>
+    <!--单位工程下的施工日志列表-->
+    <script src="/js/unit_project/project_list.js"></script>
+    <!--单位工程下的施工日志-->
+    <script src="/js/unit_project/project_diary.js"></script>
+    <!--单位工程下的重点工序-->
+    <script src="/js/unit_project/important_pro.js "></script>
+    <!--单位工程下的基本内容-->
+    <script src="/js/unit_project/basic_content.js"></script>
+    <!--单位工程下的检验检测-->
+    <script src="/js/unit_project/inspection_and_inspection.js "></script>
+    <!--单位工程下的形象进度-->
+    <script src="/js/unit_project/graphic_progress.js "></script>
+    <!--单位工程下的危大工程-->
+    <script src="/js/unit_project/project_control.js "></script>
+    <!--四令管理下的沉桩令-->
+    <script src="/js/order_management_order/piling_order.js "></script>
+    <!--四令管理下的挖土令-->
+    <script src="/js/order_management_order/digging_order.js "></script>
+    <!--四令管理下的浇灌令-->
+    <script src="/js/order_management_order/Irrigation_order.js "></script>
+    <!--四令管理下的吊装令-->
+    <script src="/js/order_management_order/hoisting_order.js "></script>
+
+
+    <!--路由配置-->
+    <script src="/js/router.js "></script>
+    <script>
+        var vm = null; //vue实例
+        vm = new Vue({
+            router,
+            store,
+            components: {
+                menuleft
+            },
+            data: {
+                theme3: 'dark',
+            },
+            methods: {
+                //切换title
+
+            },
+
+            mounted() {
+                //设置中心高度
+                var height = $(window).height() - $('.title').height();
+                $('.content').height(height);
+            }
+        }).$mount('#diary')
+    </script>
+</body>
+
+</html>

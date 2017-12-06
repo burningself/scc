@@ -1,0 +1,58 @@
+.graphic_check {
+    height: 100%;
+    position: relative;
+    overflow-y: auto;
+}
+
+.graphic_check .spinner {
+    margin: 0;
+}
+
+.graphic_progress_footer {
+    position: relative;
+    height: 20%;
+}
+
+.graphic_progress_footer .ivu-page {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.graphic_check .ivu-row span {
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+.proNow {
+    background: #f7f7f7;
+}
+
+
+/*key_process四令管控*/
+
+.key_process {
+    height: 100%;
+}
+
+.key_process>ul {
+    height: 100%;
+    margin-right: -2px;
+}
+
+.key_process>ul>li {
+    width: 14.28%;
+    /*border: 1px solid #495060;*/
+    height: 25%;
+    float: left;
+    border-left: none;
+    border-top: none;
+    position: relative;
+}
+
+.key_process>ul>li a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}

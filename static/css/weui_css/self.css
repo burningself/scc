@@ -1,0 +1,1553 @@
+.tran-x {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.tran-y {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.tran-xy {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container {
+    overflow: auto;
+}
+
+.auto_content {
+    height: 100%;
+    overflow-y: auto;
+}
+
+.white_color {
+    background: #fff;
+}
+
+.h_all {
+    height: 100%;
+}
+
+.weui-flex {
+    position: relative;
+}
+
+.overhid {
+    overflow: hidden;
+}
+
+.text_center {
+    text-align: center;
+}
+
+
+/*中间的高度*/
+
+.project_online_content {
+    height: 100%;
+    margin-top: -46px;
+    padding-top: 46px;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+.placeholder {
+    background: rgb(234, 234, 234);
+}
+
+
+/*.weui-cell_link {
+    font-size: 16px;
+}*/
+
+.size14 {
+    font-size: 14px !important;
+}
+
+.size15 {
+    font-size: 15px !important;
+}
+
+.size16 {
+    font-size: 16px !important;
+}
+
+.size17 {
+    font-size: 17px !important;
+}
+
+.size19 {
+    font-size: 19px !important;
+}
+
+.size24 {
+    font-size: 24px !important;
+}
+
+.size22 {
+    font-size: 22px !important;
+}
+
+.size26 {
+    font-size: 26px !important;
+}
+
+.form_submit {
+    background: #eaeaea;
+}
+
+.white {
+    background: #fff !important;
+}
+
+.gre_mum {
+    right: 46px;
+    background: #04be02;
+}
+
+
+/*字体颜色*/
+
+.font_color {
+    color: #007fdc !important;
+}
+
+
+/*成功修改等小提示样式*/
+
+.show {
+    height: 20px;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 60px;
+    padding: 0 5px;
+    line-height: 20px;
+    text-align: center;
+    background: rgba(0, 0, 0, .3);
+    font-size: 12px;
+    color: #fff;
+    z-index: 9999;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity .5s;
+}
+
+.fade-enter,
+.fade-leave-to {
+    opacity: 0;
+}
+
+.text_hide {
+    overflow: hidden;
+    /*自动隐藏文字*/
+    text-overflow: ellipsis;
+    /*文字隐藏后添加省略号*/
+    white-space: nowrap;
+    /*强制不换行*/
+}
+
+.pdf_show .white_color div:nth-child(1) .weui_cell_ft,
+.right_project .weui_cell_ft {
+    width: 70%;
+    overflow: hidden;
+    /*自动隐藏文字*/
+    text-overflow: ellipsis;
+    /*文字隐藏后添加省略号*/
+    white-space: nowrap;
+    /*强制不换行*/
+}
+
+
+/*.weui-panel {
+    margin-top: 30px;
+}*/
+
+.weui-tabbar {
+    z-index: 100;
+}
+
+
+/*工序下的右侧重点难点样式*/
+
+.circle_p {
+    border-radius: 10px;
+    width: 36px;
+    height: 20px;
+    margin-left: -20px;
+    margin-top: -2px;
+    text-align: center;
+    padding-left: 0px !important;
+    color: #fff !important;
+    font-size: 10px;
+    line-height: 20px;
+}
+
+
+/*底部切换按钮*/
+
+
+/*底部切换按钮结束*/
+
+.weui_tab_bd {
+    height: 100%;
+    padding-bottom: 60px;
+    box-sizing: border-box;
+    background: rgb(234, 234, 234);
+}
+
+.weui_tab_bd_item {
+    height: 100%;
+    display: none;
+}
+
+.weui_tab_bd_item>.weui-grids:before {
+    border-top: none;
+}
+
+.weui_tab_bd_item>.weui-grids:after {
+    border-left: none;
+}
+
+.weui_tab_bd_item .weui-grid:before {
+    border-right: none;
+}
+
+.weui_tab_bd_item .weui-grid:after {
+    border-bottom: none;
+}
+
+.weui_tab_bd_item>img {
+    width: 100%;
+    vertical-align: top;
+}
+
+.weui_tab_bd_item_active {
+    display: block;
+}
+
+.common {
+    height: 100%;
+}
+
+
+/*.common .weui-loadmore {
+    position: absolute;
+    margin: 0;
+    z-index: 99;
+    height: 100%;
+    width: 100%;
+    background: #ececec;
+}*/
+
+
+/*项目在线*/
+
+
+/*.common {
+    height: 100%;
+    position: relative;
+}
+
+.project_online {
+    position: relative;
+    height: 46px;
+    background: #fff;
+}
+
+.online_ft {
+    width: 30px;
+    padding-right: 13px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: left;
+    color: #999999;
+    height: 30px;
+}
+
+.online_ft:before {
+    content: " ";
+    display: inline-block;
+    height: 6px;
+    width: 6px;
+    border-width: 2px 2px 0 0;
+    border-color: #C8C8CD;
+    border-style: solid;
+    transform: matrix(-0.71, 0.71, 0.71, 0.71, 0, 0);
+    position: absolute;
+    top: 50%;
+    margin-top: -4px;
+    left: 10px;
+}
+*/
+
+.weui-panel:first-child {
+    margin-top: 10px;
+}
+
+.common .weui-header {
+    height: 46px;
+    background: #fff;
+    z-index: 999;
+}
+
+.f_white,
+.f-white {
+    color: #000 !important;
+}
+
+.online_navbar {
+    display: flex;
+    width: 60%;
+    height: 40px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.online_navbar .online__item {
+    flex: 1;
+    color: #ccc;
+    text-align: center;
+    height: 46px;
+    font-size: 15px;
+    line-height: 46px;
+}
+
+.online_navbar .online__item.online_navbar_on {
+    color: #000;
+    font-size: 18px;
+}
+
+
+/*具体项目*/
+
+.a_project .weui-header h1 {
+    color: #000;
+    margin: 0 35px;
+    margin-left: 50px;
+    font-size: 16px;
+}
+
+.a_project .placeholder {
+    margin: 0;
+}
+
+.a_project .iconfont {
+    font-size: 20px;
+    color: #47eb14;
+}
+
+.a_project .page-bd .weui-flex {
+    padding: 5px;
+}
+
+.a_project .weui-flex .weui-flex-item:nth-child(3) .placeholder {
+    color: #47eb14 !important;
+}
+
+.a_project .weui-flex .weui-flex-item:nth-child(2) {
+    -webkit-box-flex: 6;
+    -webkit-flex: 6;
+    flex: 6;
+    font-size: 12px;
+}
+
+.a_project .weui-flex .weui-flex-item:nth-child(2) .placeholder {
+    color: #000;
+    overflow: hidden;
+    /*自动隐藏文字*/
+    text-overflow: ellipsis;
+    /*文字隐藏后添加省略号*/
+    white-space: nowrap;
+}
+
+.weui_grid:before,
+.weui_grids:before {
+    border: none;
+}
+
+.weui_panel {
+    background: none;
+}
+
+.weui-cell:before {
+    border-top: none;
+}
+
+.project_online_first .weui-panel,
+.project_online_first .weui-panel:first-child {
+    margin-top: 5px;
+}
+
+.map_list>.weui-panel__ft {
+    margin-top: 5px;
+    background: #fff;
+}
+
+
+/*工程概况*/
+
+.general_situation .weui_cell_bd,
+.general_situation .weui_panel_hd {
+    color: #313131 !important;
+}
+
+.general_situation .weui-header .weui-header-title {
+    color: #000;
+}
+
+.general_situation .weui_cells,
+.general_situation .weui_panel {
+    margin-top: 0px;
+}
+
+.general_situation .weui-flex .weui-flex-item {
+    padding: 10px 15px;
+    color: #313131;
+    background: rgb(234, 234, 234);
+}
+
+.general_situation .weui-flex .weui-flex-item:nth-child(1) {
+    flex: 1;
+}
+
+.general_situation .weui-flex .weui-flex-item:nth-child(2) {
+    flex: 2;
+}
+
+.general_situation .weui_cells:after {
+    border-bottom: none;
+}
+
+.form_submit .weui_cells .no_access {
+    font-size: 12px;
+    background: rgb(234, 234, 234);
+    border-bottom: 1px solid #ece5e5;
+}
+
+
+/*.form_submit .no_access .weui_cell_bd p {
+    color: #ccc;
+}*/
+
+
+/*.general_situation .weui_cell:before {
+    border-top: none;
+}*/
+
+.list .weui-panel:before {
+    border-top: none;
+}
+
+.trans {
+    background: #eee;
+    padding: 5px 15px;
+}
+
+.general_situation .weui_cell:before {
+    border-top: none;
+    left: 0px;
+}
+
+.hui {
+    background: #dadada !important;
+}
+
+.decor {
+    border-bottom: 1px solid #ece5e5;
+    background: rgb(234, 234, 234);
+}
+
+.rig {
+    text-align: right;
+    color: #000;
+}
+
+.space {
+    text-indent: 2em;
+}
+
+
+/*单位工程*/
+
+.unit_project h1 {
+    color: #000 !important;
+}
+
+
+/*危大管控*/
+
+.danger_control {
+    height: 100%;
+}
+
+.danger_control>.weui-header {
+    height: 46px;
+    z-index: 999;
+    position: relative;
+}
+
+.danger_control .weui-panel:first-child {
+    margin-top: 10px;
+}
+
+
+/*四令管理*/
+
+.four_order h1 {
+    color: #000 !important;
+}
+
+.four_order .weui_grid:before,
+.four_order .weui_grids:before {
+    border: none;
+}
+
+
+/*添加工程*/
+
+.addProject {
+    height: 100%;
+    background: #fff;
+}
+
+.addProject h1 {
+    color: #000 !important;
+}
+
+.addProject .weui-header {
+    box-shadow: 0px 1px 8px 2px #ccc;
+    position: relative;
+    z-index: 999;
+    background: #f1f1f1;
+}
+
+.addProject .weui_cell {
+    background: #fff;
+}
+
+.addProject .weui_cell input {
+    text-align: right;
+}
+
+.addProject .weui_cells {
+    margin-top: 0px;
+}
+
+.addProject .weui_msg_img .weui_msg_comment {
+    text-align: start;
+    padding: 10px;
+    color: #000;
+    font-size: 15px;
+}
+
+.addProject .weui_msg_img .weui_msg_comment p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+/*工程四令*/
+
+.order_content h1 {
+    color: #000 !important;
+}
+
+.order_content .weui_panel_bd {
+    font-size: 13px;
+}
+
+.order_content .weui-form-preview-hd {
+    padding: 5px 15px;
+}
+
+.order_content .weui-form-preview-hd::after {
+    border: none;
+}
+
+.order_content .weui_panel_access p {
+    padding: 2px 15px;
+    color: #000;
+    font-size: 15px;
+}
+
+.order_content .weui_panel {
+    margin-top: 0px;
+}
+
+.order_content .weui_panel_access p.last {
+    padding-bottom: 5px;
+}
+
+
+/*.order_content .weui_panel {
+    margin-top: 1px;
+}*/
+
+.weui_uploader_bd {
+    overflow: visible;
+}
+
+.weui_uploader_status .weui_uploader_status_content {
+    left: 100%;
+    top: 0px;
+}
+
+.order_content .weui-form-preview-hd .weui-form-preview-value {
+    font-size: 12px;
+}
+
+.p_map {
+    margin-top: 10px;
+}
+
+.p_map p {
+    padding-left: 15px;
+}
+
+
+/*时间轴下的对应的项目*/
+
+.list p {
+    font-size: 14px;
+    margin-top: 5px;
+    color: #55a8f1;
+    padding-left: 10px;
+}
+
+
+/*导航头*/
+
+.nav {
+    background: #fff;
+    box-shadow: 0px 2px 8px 0px #ccc;
+    position: relative;
+    z-index: 99;
+}
+
+.nav h1 {
+    color: #000 !important;
+}
+
+
+/*危大详情*/
+
+.danger_info .weui_cells {
+    margin-top: 0px;
+}
+
+.danger_info .weui_cell:before {
+    border-top: none;
+    left: 0px;
+}
+
+.danger_info .weui_input {
+    text-align: right;
+}
+
+.danger_info .weui_cell:before,
+.danger_info .weui_cells::before,
+.danger_info .weui_cells::after {
+    border: none;
+}
+
+
+/*危大论证*/
+
+.danger_argument .danger_argument_content .weui_cells {
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.danger_argument .danger_argument_content .weui_cells p::before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    width: 10px;
+    height: 25px;
+    background: #1689ef;
+}
+
+.danger_argument .danger_argument_content .weui_cells p span {
+    padding-left: 15px;
+}
+
+.danger_introduce {
+    padding: 10px;
+}
+
+.danger_introduce p {
+    margin: 5px 0;
+    font-size: 13px;
+}
+
+
+/*工程内容*/
+
+.unit_project .weui_cells {
+    margin-top: 0px;
+}
+
+.unit_project .weui_cells .weui_cell_ft {
+    color: #000;
+}
+
+.basic_content .weui-flex .weui-flex-item {
+    padding: 10px 15px;
+    /*background: #fff;*/
+}
+
+.basic_content .weui_cell::before {
+    border-top: none;
+}
+
+
+/*形象进度*/
+
+.unit_project .weui-slider-box {
+    width: 150px;
+}
+
+.unit_project .weui-slider-handler {
+    width: 20px;
+    height: 20px;
+    margin-left: -10px;
+    margin-top: -10px;
+}
+
+.graphic_progress .gc {
+    box-sizing: border-box;
+    margin-top: 5px;
+}
+
+.graphic_progress>.weui_top .weui_cell:nth-child(1) .weui_cell_ft {
+    width: 70%;
+    font-size: 15px;
+    overflow: hidden;
+    /*自动隐藏文字*/
+    text-overflow: ellipsis;
+    /*文字隐藏后添加省略号*/
+    white-space: nowrap;
+    /*强制不换行*/
+}
+
+.right_project .weui_cell_ft {
+    width: 62%;
+    overflow: hidden;
+    /*自动隐藏文字*/
+    text-overflow: ellipsis;
+    /*文字隐藏后添加省略号*/
+    white-space: nowrap;
+    /*强制不换行*/
+}
+
+.graphic_progress .gc .weui_cells:after,
+.graphic_progress .gc .weui_cells:before {
+    border: none;
+}
+
+.gc .weui_cell .weui_cell_ft span {
+    position: relative;
+    z-index: 99;
+    color: #fff;
+    font-size: 12px;
+}
+
+.gc .weui_cell .weui_cell_ft::before {
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 10px;
+    width: 36px;
+    height: 20px;
+    margin-left: -6px;
+    margin-top: 2px;
+}
+
+.gc .gre .weui_cell_ft::before {
+    background: green;
+}
+
+.gc .red .weui_cell_ft::before {
+    background: red;
+}
+
+
+/*施工地图*/
+
+.work_map_footer {
+    height: 60px;
+}
+
+.work_map_footer .weui_cell {
+    font-size: 13px;
+    padding: 5px 15px;
+}
+
+.work_map_footer .weui_cell .weui_cell_bd p:nth-child(2) {
+    color: #7d7b7b;
+}
+
+.work_map_footer .weui_cell .weui_cell_ft p {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #007fdc;
+    color: #fff;
+    line-height: 30px;
+    font-size: 12px;
+    text-align: center;
+}
+
+
+/*工序管控下的时间轴*/
+
+.specific_gx .weui-panel__ft p,
+.gx_time_project_gc_gxList .weui-panel__ft p,
+.managementand_and_control .weui-panel__ft p {
+    border-radius: 10px;
+    width: 36px;
+    height: 20px;
+    margin-left: -20px;
+    margin-top: 0px;
+    text-align: center;
+    padding-left: 0px;
+    color: #fff;
+    font-size: 10px;
+    line-height: 20px;
+}
+
+
+/*我的消息*/
+
+.message .weui-header-left a {
+    display: none;
+}
+
+.message_content {
+    font-size: 13px;
+    box-sizing: border-box;
+}
+
+.message_content .weui_cell {
+    background: #fff;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.message .project_online_content {
+    padding-top: 50px;
+}
+
+.message .weui_cell::before {
+    /*padding: 15px 0;*/
+    border-top: none !important;
+    width: 0;
+}
+
+
+/*个人信息*/
+
+.self_info_title {
+    width: 100%;
+    height: 180px;
+    background: url('/img/index.jpg');
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.self_info_title p {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    background: url('/img/index.jpg');
+    background-size: 100% 100%;
+}
+
+.backBtn {
+    color: red;
+    background: #fff;
+    margin-top: 10px;
+    border-radius: 0px;
+}
+
+.backBtn.weui_btn::after {
+    border-left: none;
+    border-right: none;
+    border-radius: 0px;
+}
+
+.self_info_content .weui_cells {
+    margin-top: 10px;
+}
+
+
+/*重点工序*/
+
+.gx_list_gc_gxList .weui-panel__ft p,
+.add_important_gx .weui-panel__ft p {
+    border-radius: 10px;
+    width: 36px;
+    height: 20px;
+    margin-left: -20px;
+    margin-top: 0px;
+    text-align: center;
+    padding-left: 0px;
+    color: #fff;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.add_gx .weui_cells {
+    margin-top: 0px;
+}
+
+.add_gx .weui_cell input {
+    text-align: right;
+}
+
+
+/*施工日记*/
+
+.date_diary {
+    overflow: hidden;
+    height: 50px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.date_diary_title {
+    height: 40px;
+    line-height: 40px;
+}
+
+.date_diary_title p {
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    margin-right: 10px;
+    color: #007fdc;
+}
+
+.date_diary_content {
+    overflow: hidden;
+}
+
+.diary>.weui-flex .weui-flex-item:nth-child(1) {
+    flex: 2;
+}
+
+.diary .weui-flex .weui-flex-item .placeholder,
+.diary .weui-flex {
+    background: #fff;
+}
+
+.diary>.weui-flex .weui-flex-item .placeholder {
+    color: #000;
+    border-right: 1px solid #a5a5a5;
+}
+
+.diary>.weui-flex .weui-flex-item:nth-last-child(1) .placeholder {
+    border-right: none;
+}
+
+.fb .weui_cells {
+    background: none;
+}
+
+.fb_info .weui_cell_primary input {
+    text-align: right;
+    color: #000;
+}
+
+.fb_info {
+    background: #fff;
+}
+
+.fb_info .weui_label {
+    width: 150px;
+}
+
+
+/*.fb_info .weui_cell:nth-child(1) {
+    padding: 0
+}*/
+
+
+/*.fb_info .placeholder .weui_cell {
+    padding: 0;
+}*/
+
+.fb_info .weui-table {
+    border-top: 1px solid #e0e0e0;
+}
+
+.fb_info .weui-table thead th {
+    color: #007cff;
+}
+
+.fb_info .weui-table tr {
+    display: flex;
+}
+
+.fb_info .weui-table tr td,
+.fb_info .weui-table tr th {
+    flex: 1;
+}
+
+.fb_info .weui-table tr input {
+    text-align: center;
+    position: relative;
+    z-index: 999;
+}
+
+.diary_record_content {
+    background: #fff;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    overflow: hidden;
+}
+
+.diary_record_content .weui_cell {
+    padding-bottom: 0px;
+}
+
+.diary_record_content .weui_cells_title {
+    margin: 5px 0;
+}
+
+.diary_record_content .weui_cell_primary .weui_input {
+    border: 1px solid #e0e0e0;
+    height: 80px;
+    padding: 10px;
+    box-sizing: border-box;
+    line-height: normal;
+}
+
+.diary_record_content .weui_cells::after,
+.diary_record_content .weui_cells::before {
+    border: none;
+}
+
+.fb .weui_btn {
+    background: #007cff;
+    color: #fff;
+}
+
+.fb .weui_btn {
+    width: 90%;
+    height: 35px;
+    line-height: 35px;
+    font-size: 17px;
+}
+
+
+/*添加分部*/
+
+.add_fb .weui_label {
+    width: 130px;
+    text-align: left;
+}
+
+.add_fb .weui_msg_src {
+    background: #fff;
+}
+
+.add_fb .weui_cell input {
+    text-align: right;
+}
+
+.add_fb .weui-table input {
+    text-align: center;
+}
+
+.add_fb .weui-table .icon-jiahao {
+    font-size: 13px;
+}
+
+.add_fb .weui_msg_src a {
+    margin: 0 auto;
+}
+
+.weui_msg_close {
+    z-index: 999;
+}
+
+
+/*添加日记*/
+
+.date_diary_content .placeholder,
+.add_diary .placeholder {
+    margin: 5px 0;
+}
+
+.add_diary .placeholder .weui_cell {
+    padding: 0;
+}
+
+.add_diary .placeholder .weui_cell_ft input {
+    text-align: center;
+}
+
+.date_diary_content .weui-flex .weui-flex-item:nth-child(2) input,
+.add_diary .diary .weui-flex .weui-flex-item:nth-child(2) input,
+.add_diary .diary .weui-flex .weui-flex-item:nth-child(3) input {
+    width: 65%;
+}
+
+.add_diary_show {
+    position: fixed;
+    top: 0;
+    font-size: 15px;
+    z-index: 999;
+    background: rgba(0, 0, 0, .4);
+    color: #fff;
+    width: 200px;
+}
+
+.center_content .weui_panel .weui_cell {
+    background: #fff;
+    font-size: 15px;
+}
+
+
+/*审批意见*/
+
+.check_opinion {
+    background: #fff;
+}
+
+.check_opinion .placeholder {
+    margin: 0;
+}
+
+
+/*.check_opinion>.weui-flex .weui-flex-item:nth-child(1) {
+    position: relative;
+}*/
+
+.check_opinion>.weui-flex .weui-flex-item:nth-child(1) {
+    width: 30px;
+    -webkit-box-flex: none;
+    -webkit-flex: none;
+    flex: none;
+}
+
+.check_opinion>.weui-flex .weui-flex-item:nth-child(2) {
+    -webkit-box-flex: 8;
+    -webkit-flex: 8;
+    flex: 8;
+    /*overflow: auto;*/
+    padding-right: 20px;
+}
+
+.opinion_bac {
+    position: relative;
+    float: left;
+    width: 100%;
+}
+
+
+/*
+.opinion_bac::before {
+    display: block;
+    content: '';
+    width: 20%;
+    height: 95%;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    background: rgb(234, 234, 234);
+    top: 0px;
+}
+
+*/
+
+.op_line {
+    width: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    background: rgb(234, 234, 234);
+    top: 0px;
+}
+
+.opinion {
+    margin-top: 20px;
+}
+
+.opinion .weui_cell {
+    padding: 0;
+}
+
+.op_color {
+    color: #001f3f;
+}
+
+.opinion_title {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.opinion_title .opinion_con:nth-child(2),
+.opinion_title .opinion_con:nth-child(1) {
+    background: #f0f0f0 !important;
+    border-radius: 5px 5px 0 0;
+}
+
+.opinion_title .opinion_con:nth-child(2)>div {
+    text-align: center;
+    width: 100%;
+}
+
+.opinion_title .opinion_con:nth-child(3) {
+    color: #737171;
+}
+
+.opinion_con {
+    background: #fff;
+    border: 1px solid #ddd;
+}
+
+.op_flex {
+    margin-right: 10px;
+    text-align: center;
+}
+
+.opinion .weui_cell:before {
+    border-top: none;
+}
+
+
+/*.op_count {
+    position: relative;
+    margin-top: 46px;
+}
+*/
+
+.opinion_title {
+    position: relative;
+}
+
+.op_count {
+    display: block;
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    line-height: 20px;
+    text-align: center;
+    top: 50%;
+    border-radius: 50%;
+    z-index: 50;
+    transform: translateY(-50%);
+    color: #fff;
+    margin-left: -24px;
+}
+
+.green {
+    background: green;
+}
+
+.yellowColor {
+    color: rgba(232, 232, 15, 0.73) !important;
+}
+
+.yellow {
+    background: rgba(232, 232, 15, 0.73);
+}
+
+.red_h {
+    background: red;
+}
+
+.check_opinion {
+    height: 100%;
+    overflow: hidden;
+}
+
+
+/*我的消息*/
+
+.type_icon {
+    width: 50px;
+    height: 25px;
+    text-align: center;
+    background-size: 100% 100%;
+}
+
+.weui_msg {
+    background: rgba(0, 0, 0, 0.7) none repeat scroll 0 0;
+    height: 100%;
+    left: 0;
+    display: node;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.icon_star {
+    display: block;
+    position: absolute;
+    width: 45px;
+    top: 0;
+    left: 0;
+    height: 45px;
+    margin-top: -10px;
+    margin-left: -15px;
+    text-align: center;
+    line-height: 45px;
+}
+
+.weui_msg .weui_text_area {
+    padding: 10px 20px;
+}
+
+.icon_fa {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    height: 25px;
+    position: relative;
+}
+
+.weui_msg_close {
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+}
+
+.weui_msg .weui_msg_desc {
+    color: #000;
+}
+
+.weui-header .weui-header-right {
+    height: 46px;
+    top: 0px;
+    width: 50px;
+    right: 0px;
+    line-height: 46px;
+    text-align: center;
+}
+
+.weui-header .weui-header-left {
+    height: 46px;
+    line-height: 46px;
+    top: 0px;
+    left: 0;
+    width: 50px;
+    text-align: center;
+}
+
+.weui-header .weui-header-left a {
+    width: 50px;
+    text-align: center;
+}
+
+.info {
+    border: solid 1px silver;
+    transition: 1s;
+}
+
+div.info-top {
+    position: relative;
+    background: none repeat scroll 0 0 #F9F9F9;
+    border-bottom: 1px solid #CCC;
+    border-radius: 5px 5px 0 0;
+}
+
+div.info-top div {
+    display: inline-block;
+    color: #333333;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 31px;
+    padding: 0 20px;
+}
+
+
+/*div.info-top img {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    transition-duration: 0.25s;
+}*/
+
+
+/*div.info-top img:hover {
+    box-shadow: 0px 0px 5px #000;
+}*/
+
+div.info-middle {
+    font-size: 12px;
+    padding: 6px;
+    line-height: 20px;
+}
+
+.order_content .weui-form-preview-label {
+    color: #000;
+}
+
+
+/*.map_loadmore {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    top: 0px;
+    background: #eaeaea;
+}*/
+
+.project_map_list {
+    position: relative;
+}
+
+.message_title .cont {
+    padding: 0 10px 0 65px;
+}
+
+.message_title .placeholder {
+    height: auto;
+    text-align: left;
+    line-height: normal;
+    line-height: 40px;
+}
+
+.message_title .weui-flex .weui-flex-item:nth-child(1) .placeholder {
+    padding-top: 13px;
+}
+
+.message_title .weui-flex .weui-flex-item:nth-child(1) {
+    width: 60px;
+}
+
+.message_title .weui-flex .weui-flex-item:nth-child(2) {
+    -webkit-box-flex: 4;
+    -webkit-flex: 4;
+    flex: 4;
+    padding-top: 1px;
+}
+
+.message_title .weui-flex .weui-flex-item:nth-child(3) {
+    -webkit-box-flex: 3;
+    -webkit-flex: 3;
+    flex: 3;
+}
+
+.showAll {
+    height: 40px;
+    line-height: 40px;
+    background: #fff;
+}
+
+.list_box {
+    overflow: hidden;
+    transition: all .3s;
+    height: 0;
+}
+
+.luyin {
+    padding: 10px 10px 10px 0;
+    margin-right: -10px;
+}
+
+.stop_luyin {
+    padding: 10px 0px 10px 10px;
+}
+
+.delet_gz {
+    background-color: #ef4f4f !important;
+    width: 80% !important;
+    height: 80% !important;
+    line-height: 28px !important;
+}
+
+.dele_fb {
+    line-height: 30px !important;
+}
+
+.dele_fb,
+.fb .weui_cells .fb_info:nth-child(n+1) {
+    margin-top: 10px;
+}
+
+.weu_ssd {
+    position: absolute;
+    right: 0;
+    width: 30px;
+}
+
+.del_gx {
+    width: 65px;
+    top: -10px;
+    height: 45px;
+    position: absolute;
+    line-height: 45px;
+    right: 0px;
+}
+
+.pop_gx {
+    margin-left: 5px !important;
+    left: 0;
+    margin-left: -10px
+}
+
+.specific_gx .weui-panel__ft .text_hide,
+.gx_time_project_gc_gxList .weui-panel__ft .text_hide,
+.gx_list_gc_gxList .weui-panel__ft .text_hide,
+.add_important_gx .weui-panel__ft .text_hide,
+.procedure_project_line .weui-panel__ft .text_hide {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.procedure_sty {
+    background: red;
+    width: 25px;
+    line-height: 16px;
+    vertical-align: unset;
+}
+
+.pdf_show .weui_cells {
+    margin-top: 0px;
+    font-size: 15px;
+}
+
+.pdf_show .weui_btn {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: #007cff;
+    color: #fff;
+    width: 90%;
+    height: 35px;
+    line-height: 35px;
+}
+
+.pdf_look {
+    background: #007cff;
+    color: #fff !important;
+}
+
+.pdf_show .weui_cells .no_access:before {
+    border-top: none;
+}
+
+.pdf_show .weui_cells .no_access {
+    border-bottom: 1px solid #eee;
+}
+
+.pdf_show .weui_cells div:nth-child(5) .weui_cell_ft,
+.pdf_show .weui_cells div:nth-child(4) .weui_cell_ft {
+    width: 50%;
+}
